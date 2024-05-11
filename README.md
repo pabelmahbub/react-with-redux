@@ -30,7 +30,7 @@ export default {
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 # How to start a react-redux app:
 ```
-a. create an app: npm create vite@latest
+a. create an app: **npm create vite@latest**
 ```
 ```
 b.name the project name and choose react and Typescript and install: npm I
