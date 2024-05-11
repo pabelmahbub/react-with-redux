@@ -28,3 +28,40 @@ export default {
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# How to start a react-redux app:
+```
+a. create an app: npm create vite@latest
+```
+```
+b.name the project name and choose react and Typescript and install: npm I
+```
+```
+c.to run app: npm run dev
+it will open in port 5173
+to run it in 3000:
+in vite.config.ts:
+
+export default define Config({
+plugins: [react()],
+server: {
+  port: 3000
+},
+terminal re-open.
+```
+```
+d. delete app.css file and App.jsx, index.css need modifications
+```
+```
+e.to install tailwind in the app go to URL: tailwindcss.com/docs/installation
+npm install -D tailwindcss postcss autoprefixer
+npm tailwind init -p
+Then in tailwind.config.js change accordingly:
+content:['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+
+then in index.css:
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+to check: className='bg-red-600' -> npm run dev
+```
