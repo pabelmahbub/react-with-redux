@@ -29,7 +29,7 @@ export default {
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 # How to start a react-redux app:
-```
+```js
 a. create an app: ### npm create vite@latest
 ```
 ```
